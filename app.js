@@ -45,7 +45,6 @@ const productsRouter = require('./routes/products');
  *
  */
 
- app.use('/api/users', usersRouter);
  app.use('/api/products', productsRouter);
 
 
