@@ -66,10 +66,10 @@ router.get('/:id', async (req, res) => {
 router.post('/new', async (req, res) => {
     // let userId = req.body.userId;
     // let data = JSON.parse(req.body);
-    let {userId, products} = req.body;
+    let { products} = req.body;
 
 
-     if (userId !== null && userId > 0) {
+     if (products !== null) {
         database.table('orders')
             .insert({
                 // user_id: userId
